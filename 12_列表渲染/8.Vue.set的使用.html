@@ -49,7 +49,7 @@
                 addSex() {
                     //这里this === vm
                     //利用vue.set(或者vm.$set())api能够添加的属性变为响应式属性
-                    //注意对象不能是 Vue 实例，或者 Vue 实例的根数据对象。
+                    //注意对象不能是 Vue 实例，或者 Vue 实例的根数据对象，即vm._data (只对data里面的对象生效)。
                     Vue.set(this.stu, 'sex', '男')
                     // this.$set(this.stu, 'sex', '男');
                 }
