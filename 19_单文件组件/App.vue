@@ -1,8 +1,8 @@
 <template>
-   <div>
-     <School></School>
-     <Student></Student>
-   </div>
+  <div>
+    <School></School>
+    <Student></Student>
+  </div>
 </template>
 
 <script>
@@ -12,10 +12,9 @@ import Student from "./Student";
 export default {
   name: "App",
   //汇总所有的组件
-  components:{
+  components: {
     Student,
     School
   }
 }
 </script>
-
