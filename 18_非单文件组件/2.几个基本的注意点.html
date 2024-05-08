@@ -47,10 +47,10 @@
 
         const s = Vue.extend({
             template: `
-          <div>
-            <h2>学校名称:{{ name }}</h2>
-            <h2>学校地址:{{ address }}</h2>
-          </div>
+            <div>
+                <h2>学校名称:{{ name }}</h2>
+                <h2>学校地址:{{ address }}</h2>
+            </div>
         `,
             data() {
                 return {
@@ -64,10 +64,10 @@
         //创建组件的简写 (不需要vue.extend)
         const hello = {
             template: `
-          <div>
-            <h1>{{ msg }}</h1>
-         </div>
-        `,
+            <div>
+                <h1>{{ msg }}</h1>
+            </div>
+            `,
             data() {
                 return {
                     msg: "hello"

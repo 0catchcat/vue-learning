@@ -23,12 +23,12 @@
 
         const student = Vue.extend({
             template: `
-           <div>
-              <h2>学生姓名:{{ name }}</h2>
-              <h2>学生年龄:{{ age }}</h2>
+            <div>
+                <h2>学生姓名:{{ name }}</h2>
+                <h2>学生年龄:{{ age }}</h2>
 
-           </div>
-        `,
+            </div>
+            `,
             data() {
                 return {
                     name: 'JONE',
@@ -39,13 +39,13 @@
 
         const school = Vue.extend({
             template: `
-          <div>
-             <h1>学校名称:{{ name }}</h1>
-             <h1>学校地址:{{ address }}</h1>
-             <!--子组件注册给哪个父组件，就嵌套在哪个副组件里面--->
-             <student></student>
-          </div>
-        `,
+            <div>
+                <h1>学校名称:{{ name }}</h1>
+                <h1>学校地址:{{ address }}</h1>
+                <!--子组件注册给哪个父组件，就嵌套在哪个父组件里面--->
+                <student></student>
+            </div>
+            `,
 
             data() {
                 return {
@@ -73,10 +73,11 @@
 
 
         const app = Vue.extend({
-            template: `<div>
-            <school></school>
-            <hello></hello>
-          </div>`,
+            template: `
+            <div>
+                <school></school>
+                <hello></hello>
+            </div>`,
             components: {
                 school,
                 hello
@@ -97,7 +98,6 @@
                 x: 1,
             }
         });
-
 
     </script>
 </body>
